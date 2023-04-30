@@ -1,0 +1,3 @@
+[submodule "matiec_examples"]
+	path = matiec_examples
+	url = https://github.com/KevinRobben/matiec_examples.git
