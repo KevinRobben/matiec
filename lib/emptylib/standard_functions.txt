@@ -1,0 +1,13 @@
+(************************************************)
+(************************************************)
+(***                                          ***)
+(***    The IEC 61131-3 standard functions    ***)
+(***                                          ***)
+(***    Auto-generated file. Do not edit!     ***)
+(***                                          ***)
+(************************************************)
+(************************************************)
+{disable code generation}
+FUNCTION AND : BOOL VAR_INPUT IN 1 .. : BOOL; END_VAR RETURN; END_FUNCTION
+{enable code generation}
+

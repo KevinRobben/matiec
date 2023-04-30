@@ -1,0 +1,11 @@
+{
+  "ActiveTargetSystem": "WSL: Ubuntu-22.04",
+  "ExpandedNodes": [
+    "",
+    "\\lib",
+    "\\stage4",
+    "\\stage4\\generate_absyntax"
+  ],
+  "SelectedNode": "\\main.cc",
+  "PreviewInSolutionExplorer": false
+}

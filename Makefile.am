@@ -1,8 +1,8 @@
 include common.mk
 
-bin_PROGRAMS = iec2c iec2iec iec2json
+bin_PROGRAMS = iec2c iec2iec iec2json iec2absyntax
 
-SUBDIRS = absyntax absyntax_utils stage1_2 stage3 stage4 
+SUBDIRS = absyntax absyntax_utils stage1_2 stage3 stage4
 
 ACLOCAL_AMFLAGS=-I config
 
@@ -27,8 +27,16 @@ iec2json_LDADD = stage1_2/libstage1_2.a \
 	absyntax/libabsyntax.a \
 	absyntax_utils/libabsyntax_utils.a 
 
+iec2absyntax_LDADD = stage1_2/libstage1_2.a \
+	stage3/libstage3.a \
+	stage4/generate_absyntax/libstage4_abs.a \
+	absyntax/libabsyntax.a \
+	absyntax_utils/libabsyntax_utils.a
+
 iec2c_SOURCES = main.cc
 
 iec2iec_SOURCES = main.cc
 
 iec2json_SOURCES = main.cc
+
+iec2absyntax_SOURCES = main.cc
